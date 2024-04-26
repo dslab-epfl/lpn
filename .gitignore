@@ -1,0 +1,22 @@
+# Ignore __pycache__ directories
+__pycache__/
+
+dist/
+
+*.swp
+
+# Ignore .json files
+*.json
+
+# Ignore pkl files
+*.pkl
+
+*.png
+
+log
+
+*.log
+
+*.bkp
+
+*.out

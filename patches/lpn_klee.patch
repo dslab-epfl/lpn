@@ -1,0 +1,170 @@
+diff --git a/include/klee/klee.h b/include/klee/klee.h
+index 07528595..6cea1223 100644
+--- a/include/klee/klee.h
++++ b/include/klee/klee.h
+@@ -81,6 +81,13 @@ extern "C" {
+   /* print the tree associated w/ a given expression. */
+   void klee_print_expr(const char *msg, ...);
+ 
++  // void klee_log_expr(const char*file, const char *msg, ...);
++  void klee_log_expr(const char* filename, const char *msg, ...);
++  void klee_log_string(const char* filename, const char *msg);
++  int klee_random_int();
++
++  void klee_log_constraints();
++
+   /* NB: this *does not* fork n times and return [0,n) in children.
+    * It makes n be symbolic and returns: caller must compare N times.
+    */
+diff --git a/lib/Core/SpecialFunctionHandler.cpp b/lib/Core/SpecialFunctionHandler.cpp
+index 2b788d60..46216364 100644
+--- a/lib/Core/SpecialFunctionHandler.cpp
++++ b/lib/Core/SpecialFunctionHandler.cpp
+@@ -34,6 +34,8 @@
+ 
+ #include <errno.h>
+ #include <sstream>
++#include <fstream>
++#include <random>
+ 
+ using namespace llvm;
+ using namespace klee;
+@@ -108,6 +110,10 @@ static SpecialFunctionHandler::HandlerInfo handlerInfo[] = {
+   add("klee_prefer_cex", handlePreferCex, false),
+   add("klee_posix_prefer_cex", handlePosixPreferCex, false),
+   add("klee_print_expr", handlePrintExpr, false),
++  add("klee_log_string", handleLogString, false),
++  add("klee_log_expr", handleLogExpr, false),
++  add("klee_random_int", handleRandomInt, true),
++  add("klee_log_constraints", handleLogConstraints, false),
+   add("klee_print_range", handlePrintRange, false),
+   add("klee_set_forking", handleSetForking, false),
+   add("klee_stack_trace", handleStackTrace, false),
+@@ -534,6 +540,24 @@ void SpecialFunctionHandler::handleIsSymbolic(ExecutionState &state,
+                                           Expr::Int32));
+ }
+ 
++
++void SpecialFunctionHandler::handleRandomInt(ExecutionState &state,
++                                KInstruction *target, 
++                                std::vector<ref<Expr>> &arguments) {
++    // Generate a random integer
++    std::random_device rd;  // Obtain a random number from hardware
++    std::mt19937 gen(rd()); // Seed the generator
++    std::uniform_int_distribution<> distr(0, 10000000); // Define the range
++
++    int randomInt = distr(gen);
++
++    // Create a ConstantExpr with the random integer
++    ref<Expr> randomIntExpr = ConstantExpr::create(randomInt, Expr::Int32);
++
++    // Bind the ConstantExpr to the local target
++    executor.bindLocal(target, state, randomIntExpr);
++}
++
+ void SpecialFunctionHandler::handlePreferCex(ExecutionState &state,
+                                              KInstruction *target,
+                                              std::vector<ref<Expr> > &arguments) {
+@@ -562,8 +586,65 @@ void SpecialFunctionHandler::handlePrintExpr(ExecutionState &state,
+ 
+   std::string msg_str = readStringAtAddress(state, arguments[0]);
+   llvm::errs() << msg_str << ":" << arguments[1] << "\n";
++  for (auto i = state.constraints.begin(); i != state.constraints.end(); i++)
++       (*i)->dump();
+ }
+ 
++void SpecialFunctionHandler::handleLogExpr(ExecutionState &state,
++                                  KInstruction *target,
++                                  std::vector<ref<Expr> > &arguments) {
++  assert(arguments.size()==3 &&
++         "invalid number of arguments to klee_log_expr");
++
++  std::string filename = readStringAtAddress(state, arguments[0]);
++  std::string msg_str = readStringAtAddress(state, arguments[1]);
++  std::error_code EC;
++  llvm::raw_fd_ostream outFile(filename, EC, llvm::sys::fs::OF_Append);
++  ref<ConstantExpr> value;
++  if (!isa<ConstantExpr>(arguments[2])) {
++    // FIXME: Pull into a unique value method?
++    bool res=0;
++    bool success __attribute__((unused)) = executor.solver->getValue(
++        state.constraints, arguments[2], value, state.queryMetaData);
++    assert(success && "FIXME: Unhandled solver failure");
++    success = executor.solver->mustBeTrue(state.constraints,
++                                          EqExpr::create(arguments[2], value),
++                                          res, state.queryMetaData);
++    assert(success && "FIXME: Unhandled solver failure");
++    if(res){
++      outFile << "property:" << msg_str << ";" << "sample:" << value << ";" <<"ranges:" << "NULL" << "\n";
++    }else{
++      std::pair<ref<Expr>, ref<Expr>> range = executor.solver->getRange(
++          state.constraints, arguments[2], state.queryMetaData);
++      outFile << "property:" << msg_str << ";" << "sample:" << value << ";" <<"ranges:" << "[" << range.first << ", " << range.second << "]" << "\n";
++    }  
++  }else{
++    outFile << "property:" << msg_str << ";" << "sample:" <<  arguments[2] << ";" <<"ranges:" << "NULL" << "\n";
++  }
++}
++
++
++void SpecialFunctionHandler::handleLogString(ExecutionState &state,
++                                  KInstruction *target,
++                                  std::vector<ref<Expr> > &arguments) {
++  assert(arguments.size()==2 &&
++         "invalid number of arguments to klee_print_expr");
++
++  std::string filename = readStringAtAddress(state, arguments[0]);
++  std::error_code EC;
++  llvm::raw_fd_ostream outFile(filename, EC, llvm::sys::fs::OF_Append);
++
++  std::string msg_str = readStringAtAddress(state, arguments[1]);
++  outFile << msg_str;
++}
++
++void SpecialFunctionHandler::handleLogConstraints(ExecutionState &state,
++                                  KInstruction *target,
++                                  std::vector<ref<Expr> > &arguments) {
++  // llvm::raw_fd_ostream os = arguments[0];
++  // for (auto i = state.constraints.begin(); i != state.constraints.end(); i++)
++      //  (*i)->print(os);
++}
+ void SpecialFunctionHandler::handleSetForking(ExecutionState &state,
+                                               KInstruction *target,
+                                               std::vector<ref<Expr> > &arguments) {
+diff --git a/lib/Core/SpecialFunctionHandler.h b/lib/Core/SpecialFunctionHandler.h
+index a9f7100d..3892e85d 100644
+--- a/lib/Core/SpecialFunctionHandler.h
++++ b/lib/Core/SpecialFunctionHandler.h
+@@ -148,6 +148,10 @@ namespace klee {
+     HANDLER(handleMulOverflow);
+     HANDLER(handleSubOverflow);
+     HANDLER(handleDivRemOverflow);
++    HANDLER(handleLogExpr);
++    HANDLER(handleLogString);
++    HANDLER(handleLogConstraints);
++    HANDLER(handleRandomInt);
+ #undef HANDLER
+   };
+ } // End klee namespace
+diff --git a/lib/Solver/Z3Solver.cpp b/lib/Solver/Z3Solver.cpp
+index 87ffbdf3..e9e21cd4 100644
+--- a/lib/Solver/Z3Solver.cpp
++++ b/lib/Solver/Z3Solver.cpp
+@@ -362,7 +362,7 @@ SolverImpl::SolverRunStatus Z3SolverImpl::handleSolverResponse(
+         __attribute__((unused))
+         bool successfulEval =
+             Z3_model_eval(builder->ctx, theModel, initial_read,
+-                          /*model_completion=*/Z3_TRUE, &arrayElementExpr);
++                          /*model_completion=*/Z3_L_TRUE, &arrayElementExpr);
+         assert(successfulEval && "Failed to evaluate model");
+         Z3_inc_ref(builder->ctx, arrayElementExpr);
+         assert(Z3_get_ast_kind(builder->ctx, arrayElementExpr) ==
+@@ -432,7 +432,7 @@ bool Z3SolverImpl::validateZ3Model(::Z3_solver &theSolver, ::Z3_model &theModel)
+     __attribute__((unused))
+     bool successfulEval =
+         Z3_model_eval(builder->ctx, theModel, constraint,
+-                      /*model_completion=*/Z3_TRUE, &rawEvaluatedExpr);
++                      /*model_completion=*/Z3_L_TRUE, &rawEvaluatedExpr);
+     assert(successfulEval && "Failed to evaluate model");
+ 
+     // Use handle to do ref-counting.

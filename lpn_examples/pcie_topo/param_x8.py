@@ -1,0 +1,16 @@
+SCALE = 10
+HBYTE = 30
+UNIT=16
+FMHz = 100.0*SCALE
+nsPerCycle = 1
+'make sure READMPS <= Credit*UNIT'
+READMPS = 256
+MPS = 256
+RCTLP_SIZE = 256
+ReadDelay = 90
+BW = 16
+LinkDelay = 1 #int(15.0/(BW*nsPerCycle))
+DelayCycle = 405
+Credit = 16 #int((11.5*nsPerCycle*LinkDelay/(64*SCALE))*2)
+AdditionalCost = 1
+ProcessTLPCost = 7

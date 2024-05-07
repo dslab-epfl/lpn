@@ -1,0 +1,2266 @@
+[
+    {
+        "field_f1": {
+            "type": "submessage",
+            "is_repeated": false,
+            "data": {
+                "field_f1": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        15
+                    ]
+                },
+                "field_f2": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        2844
+                    ]
+                },
+                "field_f3": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        17
+                    ]
+                },
+                "field_f4": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        5
+                    ]
+                },
+                "field_f5": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        1852
+                    ]
+                },
+                "field_f6": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        2948
+                    ]
+                },
+                "field_f7": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        40172
+                    ]
+                },
+                "field_f8": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        19
+                    ]
+                },
+                "field_f9": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        3952
+                    ]
+                },
+                "field_f10": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        17
+                    ]
+                }
+            }
+        },
+        "field_f2": {
+            "type": "nonscalar",
+            "is_repeated": false,
+            "data": [
+                10
+            ]
+        },
+        "field_f3": {
+            "type": "nonscalar",
+            "is_repeated": false,
+            "data": [
+                5
+            ]
+        },
+        "field_f4": {
+            "type": "scalar",
+            "is_repeated": false,
+            "data": [
+                8
+            ]
+        },
+        "field_f5": {
+            "type": "nonscalar",
+            "is_repeated": false,
+            "data": [
+                3
+            ]
+        },
+        "field_f6": {
+            "type": "submessage",
+            "is_repeated": false,
+            "data": {
+                "field_f1": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        5
+                    ]
+                }
+            }
+        },
+        "field_f7": {
+            "type": "nonscalar",
+            "is_repeated": false,
+            "data": [
+                17
+            ]
+        },
+        "field_f8": {
+            "type": "nonscalar",
+            "is_repeated": false,
+            "data": [
+                3
+            ]
+        },
+        "field_f9": {
+            "type": "scalar",
+            "is_repeated": false,
+            "data": [
+                8
+            ]
+        },
+        "field_f10": {
+            "type": "scalar",
+            "is_repeated": false,
+            "data": [
+                8
+            ]
+        },
+        "field_f11": {
+            "type": "nonscalar",
+            "is_repeated": false,
+            "data": [
+                2
+            ]
+        },
+        "field_f12": {
+            "type": "nonscalar",
+            "is_repeated": false,
+            "data": [
+                10
+            ]
+        },
+        "field_f13": {
+            "type": "submessage",
+            "is_repeated": false,
+            "data": {
+                "field_f1": {
+                    "type": "submessage",
+                    "is_repeated": false,
+                    "data": {
+                        "field_f1": {
+                            "type": "nonscalar",
+                            "is_repeated": false,
+                            "data": [
+                                3
+                            ]
+                        }
+                    }
+                },
+                "field_f2": {
+                    "type": "submessage",
+                    "is_repeated": false,
+                    "data": {
+                        "field_f1": {
+                            "type": "nonscalar",
+                            "is_repeated": false,
+                            "data": [
+                                19
+                            ]
+                        }
+                    }
+                },
+                "field_f3": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        15
+                    ]
+                }
+            }
+        },
+        "field_f14": {
+            "type": "nonscalar",
+            "is_repeated": false,
+            "data": [
+                20
+            ]
+        },
+        "field_f15": {
+            "type": "scalar",
+            "is_repeated": false,
+            "data": [
+                8
+            ]
+        },
+        "field_f16": {
+            "type": "submessage",
+            "is_repeated": false,
+            "data": {
+                "field_f1": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        117
+                    ]
+                },
+                "field_f2": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        23
+                    ]
+                },
+                "field_f3": {
+                    "type": "scalar",
+                    "is_repeated": false,
+                    "data": [
+                        8
+                    ]
+                },
+                "field_f4": {
+                    "type": "scalar",
+                    "is_repeated": false,
+                    "data": [
+                        8
+                    ]
+                }
+            }
+        },
+        "field_f17": {
+            "type": "submessage",
+            "is_repeated": false,
+            "data": {
+                "field_f1": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        32200
+                    ]
+                },
+                "field_f2": {
+                    "type": "submessage",
+                    "is_repeated": false,
+                    "data": {
+                        "field_f1": {
+                            "type": "nonscalar",
+                            "is_repeated": false,
+                            "data": [
+                                19
+                            ]
+                        },
+                        "field_f2": {
+                            "type": "scalar",
+                            "is_repeated": false,
+                            "data": [
+                                8
+                            ]
+                        },
+                        "field_f3": {
+                            "type": "nonscalar",
+                            "is_repeated": true,
+                            "data": [
+                                35408
+                            ]
+                        },
+                        "field_f4": {
+                            "type": "nonscalar",
+                            "is_repeated": false,
+                            "data": [
+                                1896
+                            ]
+                        }
+                    }
+                },
+                "field_f3": {
+                    "type": "scalar",
+                    "is_repeated": false,
+                    "data": [
+                        8
+                    ]
+                },
+                "field_f4": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        8
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "field_f1": {
+            "type": "scalar",
+            "is_repeated": false,
+            "data": [
+                8
+            ]
+        },
+        "field_f2": {
+            "type": "submessage",
+            "is_repeated": false,
+            "data": {
+                "field_f1": {
+                    "type": "submessage",
+                    "is_repeated": false,
+                    "data": {
+                        "field_f1": {
+                            "type": "scalar",
+                            "is_repeated": false,
+                            "data": [
+                                8
+                            ]
+                        },
+                        "field_f2": {
+                            "type": "scalar",
+                            "is_repeated": false,
+                            "data": [
+                                8
+                            ]
+                        }
+                    }
+                },
+                "field_f2": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        164
+                    ]
+                }
+            }
+        },
+        "field_f3": {
+            "type": "submessage",
+            "is_repeated": false,
+            "data": {
+                "field_f1": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        3144
+                    ]
+                },
+                "field_f2": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        3
+                    ]
+                },
+                "field_f3": {
+                    "type": "scalar",
+                    "is_repeated": false,
+                    "data": [
+                        8
+                    ]
+                },
+                "field_f4": {
+                    "type": "scalar",
+                    "is_repeated": false,
+                    "data": [
+                        8
+                    ]
+                },
+                "field_f5": {
+                    "type": "scalar",
+                    "is_repeated": false,
+                    "data": [
+                        8
+                    ]
+                }
+            }
+        },
+        "field_f4": {
+            "type": "nonscalar",
+            "is_repeated": false,
+            "data": [
+                19
+            ]
+        },
+        "field_f5": {
+            "type": "submessage",
+            "is_repeated": false,
+            "data": {
+                "field_f1": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        5
+                    ]
+                },
+                "field_f2": {
+                    "type": "scalar",
+                    "is_repeated": false,
+                    "data": [
+                        8
+                    ]
+                },
+                "field_f3": {
+                    "type": "scalar",
+                    "is_repeated": false,
+                    "data": [
+                        8
+                    ]
+                },
+                "field_f4": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        17
+                    ]
+                }
+            }
+        },
+        "field_f6": {
+            "type": "nonscalar",
+            "is_repeated": false,
+            "data": [
+                10012
+            ]
+        },
+        "field_f7": {
+            "type": "nonscalar",
+            "is_repeated": false,
+            "data": [
+                4
+            ]
+        },
+        "field_f8": {
+            "type": "nonscalar",
+            "is_repeated": false,
+            "data": [
+                3
+            ]
+        },
+        "field_f9": {
+            "type": "scalar",
+            "is_repeated": false,
+            "data": [
+                8
+            ]
+        },
+        "field_f10": {
+            "type": "nonscalar",
+            "is_repeated": false,
+            "data": [
+                3
+            ]
+        }
+    },
+    {
+        "field_f1": {
+            "type": "nonscalar",
+            "is_repeated": false,
+            "data": [
+                12
+            ]
+        },
+        "field_f2": {
+            "type": "scalar",
+            "is_repeated": false,
+            "data": [
+                8
+            ]
+        },
+        "field_f3": {
+            "type": "nonscalar",
+            "is_repeated": false,
+            "data": [
+                39276
+            ]
+        },
+        "field_f4": {
+            "type": "scalar",
+            "is_repeated": false,
+            "data": [
+                8
+            ]
+        },
+        "field_f5": {
+            "type": "nonscalar",
+            "is_repeated": false,
+            "data": [
+                44
+            ]
+        },
+        "field_f6": {
+            "type": "nonscalar",
+            "is_repeated": false,
+            "data": [
+                17
+            ]
+        },
+        "field_f7": {
+            "type": "scalar",
+            "is_repeated": false,
+            "data": [
+                8
+            ]
+        },
+        "field_f8": {
+            "type": "nonscalar",
+            "is_repeated": false,
+            "data": [
+                2948
+            ]
+        },
+        "field_f9": {
+            "type": "submessage",
+            "is_repeated": false,
+            "data": {
+                "field_f1": {
+                    "type": "scalar",
+                    "is_repeated": false,
+                    "data": [
+                        8
+                    ]
+                },
+                "field_f2": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        2700
+                    ]
+                },
+                "field_f3": {
+                    "type": "nonscalar",
+                    "is_repeated": true,
+                    "data": [
+                        118484
+                    ]
+                },
+                "field_f4": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        47
+                    ]
+                },
+                "field_f5": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        19
+                    ]
+                },
+                "field_f6": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        74
+                    ]
+                },
+                "field_f7": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        17
+                    ]
+                }
+            }
+        },
+        "field_f10": {
+            "type": "submessage",
+            "is_repeated": false,
+            "data": {
+                "field_f1": {
+                    "type": "submessage",
+                    "is_repeated": false,
+                    "data": {
+                        "field_f1": {
+                            "type": "nonscalar",
+                            "is_repeated": false,
+                            "data": [
+                                140968
+                            ]
+                        }
+                    }
+                },
+                "field_f2": {
+                    "type": "submessage",
+                    "is_repeated": false,
+                    "data": {
+                        "field_f1": {
+                            "type": "nonscalar",
+                            "is_repeated": false,
+                            "data": [
+                                17
+                            ]
+                        }
+                    }
+                },
+                "field_f3": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        4
+                    ]
+                }
+            }
+        },
+        "field_f11": {
+            "type": "nonscalar",
+            "is_repeated": false,
+            "data": [
+                97400
+            ]
+        },
+        "field_f12": {
+            "type": "submessage",
+            "is_repeated": false,
+            "data": {
+                "field_f1": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        17
+                    ]
+                },
+                "field_f2": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        5
+                    ]
+                }
+            }
+        },
+        "field_f13": {
+            "type": "scalar",
+            "is_repeated": false,
+            "data": [
+                8
+            ]
+        }
+    },
+    {
+        "field_f1": {
+            "type": "nonscalar",
+            "is_repeated": false,
+            "data": [
+                3
+            ]
+        },
+        "field_f2": {
+            "type": "nonscalar",
+            "is_repeated": false,
+            "data": [
+                6
+            ]
+        },
+        "field_f3": {
+            "type": "nonscalar",
+            "is_repeated": false,
+            "data": [
+                3
+            ]
+        },
+        "field_f4": {
+            "type": "nonscalar",
+            "is_repeated": false,
+            "data": [
+                80824
+            ]
+        },
+        "field_f5": {
+            "type": "submessage",
+            "is_repeated": false,
+            "data": {
+                "field_f1": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        18
+                    ]
+                },
+                "field_f2": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        19
+                    ]
+                },
+                "field_f3": {
+                    "type": "scalar",
+                    "is_repeated": false,
+                    "data": [
+                        8
+                    ]
+                },
+                "field_f4": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        3
+                    ]
+                },
+                "field_f5": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        17
+                    ]
+                },
+                "field_f6": {
+                    "type": "scalar",
+                    "is_repeated": false,
+                    "data": [
+                        8
+                    ]
+                },
+                "field_f7": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        5
+                    ]
+                },
+                "field_f8": {
+                    "type": "nonscalar",
+                    "is_repeated": true,
+                    "data": [
+                        7,
+                        38,
+                        331
+                    ]
+                },
+                "field_f9": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        212
+                    ]
+                },
+                "field_f10": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        2948
+                    ]
+                },
+                "field_f11": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        17
+                    ]
+                },
+                "field_f12": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        8932
+                    ]
+                }
+            }
+        },
+        "field_f6": {
+            "type": "nonscalar",
+            "is_repeated": false,
+            "data": [
+                3
+            ]
+        },
+        "field_f7": {
+            "type": "submessage",
+            "is_repeated": false,
+            "data": {
+                "field_f1": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        16
+                    ]
+                },
+                "field_f2": {
+                    "type": "submessage",
+                    "is_repeated": false,
+                    "data": {
+                        "field_f1": {
+                            "type": "nonscalar",
+                            "is_repeated": false,
+                            "data": [
+                                110768
+                            ]
+                        },
+                        "field_f2": {
+                            "type": "nonscalar",
+                            "is_repeated": false,
+                            "data": [
+                                3556
+                            ]
+                        },
+                        "field_f3": {
+                            "type": "scalar",
+                            "is_repeated": false,
+                            "data": [
+                                8
+                            ]
+                        },
+                        "field_f4": {
+                            "type": "nonscalar",
+                            "is_repeated": false,
+                            "data": [
+                                1840
+                            ]
+                        },
+                        "field_f5": {
+                            "type": "nonscalar",
+                            "is_repeated": false,
+                            "data": [
+                                21004
+                            ]
+                        },
+                        "field_f6": {
+                            "type": "nonscalar",
+                            "is_repeated": false,
+                            "data": [
+                                4
+                            ]
+                        },
+                        "field_f7": {
+                            "type": "nonscalar",
+                            "is_repeated": false,
+                            "data": [
+                                3
+                            ]
+                        },
+                        "field_f8": {
+                            "type": "nonscalar",
+                            "is_repeated": false,
+                            "data": [
+                                17
+                            ]
+                        },
+                        "field_f9": {
+                            "type": "nonscalar",
+                            "is_repeated": false,
+                            "data": [
+                                25184
+                            ]
+                        },
+                        "field_f10": {
+                            "type": "nonscalar",
+                            "is_repeated": false,
+                            "data": [
+                                3
+                            ]
+                        },
+                        "field_f11": {
+                            "type": "nonscalar",
+                            "is_repeated": false,
+                            "data": [
+                                19
+                            ]
+                        },
+                        "field_f12": {
+                            "type": "nonscalar",
+                            "is_repeated": false,
+                            "data": [
+                                7
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        "field_f8": {
+            "type": "nonscalar",
+            "is_repeated": false,
+            "data": [
+                448
+            ]
+        },
+        "field_f9": {
+            "type": "nonscalar",
+            "is_repeated": false,
+            "data": [
+                10
+            ]
+        },
+        "field_f10": {
+            "type": "nonscalar",
+            "is_repeated": false,
+            "data": [
+                15
+            ]
+        },
+        "field_f11": {
+            "type": "nonscalar",
+            "is_repeated": false,
+            "data": [
+                16
+            ]
+        },
+        "field_f12": {
+            "type": "scalar",
+            "is_repeated": false,
+            "data": [
+                8
+            ]
+        },
+        "field_f13": {
+            "type": "nonscalar",
+            "is_repeated": true,
+            "data": [
+                9508
+            ]
+        },
+        "field_f14": {
+            "type": "nonscalar",
+            "is_repeated": false,
+            "data": [
+                104
+            ]
+        }
+    },
+    {
+        "field_f1": {
+            "type": "scalar",
+            "is_repeated": false,
+            "data": [
+                8
+            ]
+        },
+        "field_f2": {
+            "type": "nonscalar",
+            "is_repeated": false,
+            "data": [
+                2
+            ]
+        },
+        "field_f3": {
+            "type": "nonscalar",
+            "is_repeated": false,
+            "data": [
+                3
+            ]
+        },
+        "field_f4": {
+            "type": "scalar",
+            "is_repeated": false,
+            "data": [
+                8
+            ]
+        },
+        "field_f5": {
+            "type": "nonscalar",
+            "is_repeated": false,
+            "data": [
+                20
+            ]
+        },
+        "field_f6": {
+            "type": "submessage",
+            "is_repeated": false,
+            "data": {
+                "field_f1": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        3
+                    ]
+                },
+                "field_f2": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        10
+                    ]
+                },
+                "field_f3": {
+                    "type": "submessage",
+                    "is_repeated": false,
+                    "data": {
+                        "field_f1": {
+                            "type": "nonscalar",
+                            "is_repeated": false,
+                            "data": [
+                                1008
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        "field_f7": {
+            "type": "scalar",
+            "is_repeated": false,
+            "data": [
+                8
+            ]
+        },
+        "field_f8": {
+            "type": "nonscalar",
+            "is_repeated": false,
+            "data": [
+                72280
+            ]
+        },
+        "field_f9": {
+            "type": "nonscalar",
+            "is_repeated": false,
+            "data": [
+                24
+            ]
+        },
+        "field_f10": {
+            "type": "nonscalar",
+            "is_repeated": false,
+            "data": [
+                19368
+            ]
+        },
+        "field_f11": {
+            "type": "scalar",
+            "is_repeated": false,
+            "data": [
+                8
+            ]
+        },
+        "field_f12": {
+            "type": "submessage",
+            "is_repeated": false,
+            "data": {
+                "field_f1": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        44
+                    ]
+                },
+                "field_f2": {
+                    "type": "submessage",
+                    "is_repeated": false,
+                    "data": {
+                        "field_f1": {
+                            "type": "nonscalar",
+                            "is_repeated": false,
+                            "data": [
+                                19
+                            ]
+                        },
+                        "field_f2": {
+                            "type": "nonscalar",
+                            "is_repeated": false,
+                            "data": [
+                                3
+                            ]
+                        },
+                        "field_f3": {
+                            "type": "nonscalar",
+                            "is_repeated": false,
+                            "data": [
+                                3
+                            ]
+                        },
+                        "field_f4": {
+                            "type": "scalar",
+                            "is_repeated": false,
+                            "data": [
+                                8
+                            ]
+                        },
+                        "field_f5": {
+                            "type": "scalar",
+                            "is_repeated": false,
+                            "data": [
+                                8
+                            ]
+                        },
+                        "field_f6": {
+                            "type": "nonscalar",
+                            "is_repeated": false,
+                            "data": [
+                                17
+                            ]
+                        },
+                        "field_f7": {
+                            "type": "nonscalar",
+                            "is_repeated": false,
+                            "data": [
+                                18
+                            ]
+                        },
+                        "field_f8": {
+                            "type": "scalar",
+                            "is_repeated": false,
+                            "data": [
+                                8
+                            ]
+                        }
+                    }
+                },
+                "field_f3": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        10
+                    ]
+                },
+                "field_f4": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        19
+                    ]
+                },
+                "field_f5": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        19
+                    ]
+                },
+                "field_f6": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        11576
+                    ]
+                },
+                "field_f7": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        10
+                    ]
+                },
+                "field_f8": {
+                    "type": "scalar",
+                    "is_repeated": false,
+                    "data": [
+                        8
+                    ]
+                },
+                "field_f9": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        104
+                    ]
+                },
+                "field_f10": {
+                    "type": "scalar",
+                    "is_repeated": false,
+                    "data": [
+                        8
+                    ]
+                }
+            }
+        },
+        "field_f13": {
+            "type": "nonscalar",
+            "is_repeated": false,
+            "data": [
+                10
+            ]
+        }
+    },
+    {
+        "field_f1": {
+            "type": "submessage",
+            "is_repeated": false,
+            "data": {
+                "field_f1": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        3
+                    ]
+                }
+            }
+        },
+        "field_f2": {
+            "type": "submessage",
+            "is_repeated": false,
+            "data": {
+                "field_f1": {
+                    "type": "submessage",
+                    "is_repeated": false,
+                    "data": {
+                        "field_f1": {
+                            "type": "nonscalar",
+                            "is_repeated": false,
+                            "data": [
+                                4
+                            ]
+                        },
+                        "field_f2": {
+                            "type": "nonscalar",
+                            "is_repeated": false,
+                            "data": [
+                                3
+                            ]
+                        },
+                        "field_f3": {
+                            "type": "nonscalar",
+                            "is_repeated": false,
+                            "data": [
+                                3
+                            ]
+                        },
+                        "field_f4": {
+                            "type": "scalar",
+                            "is_repeated": false,
+                            "data": [
+                                8
+                            ]
+                        },
+                        "field_f5": {
+                            "type": "nonscalar",
+                            "is_repeated": false,
+                            "data": [
+                                2084
+                            ]
+                        }
+                    }
+                },
+                "field_f2": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        20
+                    ]
+                }
+            }
+        },
+        "field_f3": {
+            "type": "submessage",
+            "is_repeated": false,
+            "data": {
+                "field_f1": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        3
+                    ]
+                }
+            }
+        },
+        "field_f4": {
+            "type": "scalar",
+            "is_repeated": false,
+            "data": [
+                8
+            ]
+        },
+        "field_f5": {
+            "type": "nonscalar",
+            "is_repeated": false,
+            "data": [
+                17
+            ]
+        },
+        "field_f6": {
+            "type": "scalar",
+            "is_repeated": false,
+            "data": [
+                8
+            ]
+        },
+        "field_f7": {
+            "type": "nonscalar",
+            "is_repeated": true,
+            "data": [
+                1928
+            ]
+        },
+        "field_f8": {
+            "type": "nonscalar",
+            "is_repeated": false,
+            "data": [
+                15
+            ]
+        },
+        "field_f9": {
+            "type": "nonscalar",
+            "is_repeated": false,
+            "data": [
+                89328
+            ]
+        },
+        "field_f10": {
+            "type": "nonscalar",
+            "is_repeated": false,
+            "data": [
+                3
+            ]
+        },
+        "field_f11": {
+            "type": "nonscalar",
+            "is_repeated": false,
+            "data": [
+                15
+            ]
+        },
+        "field_f12": {
+            "type": "nonscalar",
+            "is_repeated": false,
+            "data": [
+                3260
+            ]
+        },
+        "field_f13": {
+            "type": "nonscalar",
+            "is_repeated": false,
+            "data": [
+                104
+            ]
+        },
+        "field_f14": {
+            "type": "submessage",
+            "is_repeated": false,
+            "data": {
+                "field_f1": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        11
+                    ]
+                },
+                "field_f2": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        1832
+                    ]
+                },
+                "field_f3": {
+                    "type": "scalar",
+                    "is_repeated": false,
+                    "data": [
+                        8
+                    ]
+                },
+                "field_f4": {
+                    "type": "nonscalar",
+                    "is_repeated": true,
+                    "data": [
+                        5784
+                    ]
+                },
+                "field_f5": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        32272
+                    ]
+                },
+                "field_f6": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        622
+                    ]
+                },
+                "field_f7": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        625
+                    ]
+                },
+                "field_f8": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        1192
+                    ]
+                },
+                "field_f9": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        104056
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "field_f1": {
+            "type": "nonscalar",
+            "is_repeated": false,
+            "data": [
+                17
+            ]
+        },
+        "field_f2": {
+            "type": "submessage",
+            "is_repeated": false,
+            "data": {
+                "field_f1": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        17
+                    ]
+                },
+                "field_f2": {
+                    "type": "submessage",
+                    "is_repeated": false,
+                    "data": {
+                        "field_f1": {
+                            "type": "scalar",
+                            "is_repeated": false,
+                            "data": [
+                                8
+                            ]
+                        },
+                        "field_f2": {
+                            "type": "nonscalar",
+                            "is_repeated": false,
+                            "data": [
+                                17
+                            ]
+                        }
+                    }
+                },
+                "field_f3": {
+                    "type": "submessage",
+                    "is_repeated": false,
+                    "data": {
+                        "field_f1": {
+                            "type": "scalar",
+                            "is_repeated": false,
+                            "data": [
+                                8
+                            ]
+                        },
+                        "field_f2": {
+                            "type": "nonscalar",
+                            "is_repeated": false,
+                            "data": [
+                                17
+                            ]
+                        },
+                        "field_f3": {
+                            "type": "nonscalar",
+                            "is_repeated": false,
+                            "data": [
+                                464
+                            ]
+                        },
+                        "field_f4": {
+                            "type": "nonscalar",
+                            "is_repeated": false,
+                            "data": [
+                                19
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        "field_f3": {
+            "type": "nonscalar",
+            "is_repeated": false,
+            "data": [
+                8
+            ]
+        },
+        "field_f4": {
+            "type": "scalar",
+            "is_repeated": false,
+            "data": [
+                8
+            ]
+        },
+        "field_f5": {
+            "type": "nonscalar",
+            "is_repeated": false,
+            "data": [
+                15
+            ]
+        },
+        "field_f6": {
+            "type": "scalar",
+            "is_repeated": false,
+            "data": [
+                8
+            ]
+        },
+        "field_f7": {
+            "type": "nonscalar",
+            "is_repeated": false,
+            "data": [
+                5
+            ]
+        },
+        "field_f8": {
+            "type": "submessage",
+            "is_repeated": false,
+            "data": {
+                "field_f1": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        19
+                    ]
+                },
+                "field_f2": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        22316
+                    ]
+                },
+                "field_f3": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        76
+                    ]
+                },
+                "field_f4": {
+                    "type": "scalar",
+                    "is_repeated": false,
+                    "data": [
+                        8
+                    ]
+                },
+                "field_f5": {
+                    "type": "scalar",
+                    "is_repeated": false,
+                    "data": [
+                        8
+                    ]
+                },
+                "field_f6": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        10
+                    ]
+                },
+                "field_f7": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        15
+                    ]
+                },
+                "field_f8": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        18
+                    ]
+                }
+            }
+        },
+        "field_f9": {
+            "type": "scalar",
+            "is_repeated": false,
+            "data": [
+                8
+            ]
+        },
+        "field_f10": {
+            "type": "scalar",
+            "is_repeated": false,
+            "data": [
+                8
+            ]
+        },
+        "field_f11": {
+            "type": "scalar",
+            "is_repeated": false,
+            "data": [
+                8
+            ]
+        },
+        "field_f12": {
+            "type": "nonscalar",
+            "is_repeated": false,
+            "data": [
+                18
+            ]
+        },
+        "field_f13": {
+            "type": "submessage",
+            "is_repeated": false,
+            "data": {
+                "field_f1": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        17
+                    ]
+                },
+                "field_f2": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        8188
+                    ]
+                },
+                "field_f3": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        5
+                    ]
+                },
+                "field_f4": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        232
+                    ]
+                },
+                "field_f5": {
+                    "type": "scalar",
+                    "is_repeated": false,
+                    "data": [
+                        8
+                    ]
+                },
+                "field_f6": {
+                    "type": "scalar",
+                    "is_repeated": false,
+                    "data": [
+                        8
+                    ]
+                },
+                "field_f7": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        80692
+                    ]
+                }
+            }
+        },
+        "field_f14": {
+            "type": "nonscalar",
+            "is_repeated": false,
+            "data": [
+                19
+            ]
+        },
+        "field_f15": {
+            "type": "nonscalar",
+            "is_repeated": false,
+            "data": [
+                5
+            ]
+        }
+    },
+    {
+        "field_f1": {
+            "type": "nonscalar",
+            "is_repeated": false,
+            "data": [
+                676
+            ]
+        },
+        "field_f2": {
+            "type": "nonscalar",
+            "is_repeated": false,
+            "data": [
+                118
+            ]
+        },
+        "field_f3": {
+            "type": "nonscalar",
+            "is_repeated": false,
+            "data": [
+                7
+            ]
+        },
+        "field_f4": {
+            "type": "nonscalar",
+            "is_repeated": false,
+            "data": [
+                19
+            ]
+        },
+        "field_f5": {
+            "type": "nonscalar",
+            "is_repeated": false,
+            "data": [
+                17
+            ]
+        },
+        "field_f6": {
+            "type": "nonscalar",
+            "is_repeated": false,
+            "data": [
+                17
+            ]
+        },
+        "field_f7": {
+            "type": "submessage",
+            "is_repeated": false,
+            "data": {
+                "field_f1": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        110340
+                    ]
+                },
+                "field_f2": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        10364
+                    ]
+                },
+                "field_f3": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        4
+                    ]
+                },
+                "field_f4": {
+                    "type": "nonscalar",
+                    "is_repeated": true,
+                    "data": [
+                        1596
+                    ]
+                },
+                "field_f5": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        19
+                    ]
+                },
+                "field_f6": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        3
+                    ]
+                },
+                "field_f7": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        3
+                    ]
+                },
+                "field_f8": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        65320
+                    ]
+                },
+                "field_f9": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        5
+                    ]
+                },
+                "field_f10": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        8
+                    ]
+                },
+                "field_f11": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        8
+                    ]
+                }
+            }
+        },
+        "field_f8": {
+            "type": "nonscalar",
+            "is_repeated": false,
+            "data": [
+                17
+            ]
+        },
+        "field_f9": {
+            "type": "submessage",
+            "is_repeated": false,
+            "data": {
+                "field_f1": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        19
+                    ]
+                },
+                "field_f2": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        10
+                    ]
+                },
+                "field_f3": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        17
+                    ]
+                },
+                "field_f4": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        3
+                    ]
+                },
+                "field_f5": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        1876
+                    ]
+                },
+                "field_f6": {
+                    "type": "scalar",
+                    "is_repeated": false,
+                    "data": [
+                        8
+                    ]
+                },
+                "field_f7": {
+                    "type": "scalar",
+                    "is_repeated": false,
+                    "data": [
+                        8
+                    ]
+                },
+                "field_f8": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        12
+                    ]
+                },
+                "field_f9": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        40476
+                    ]
+                }
+            }
+        },
+        "field_f10": {
+            "type": "submessage",
+            "is_repeated": false,
+            "data": {
+                "field_f1": {
+                    "type": "scalar",
+                    "is_repeated": false,
+                    "data": [
+                        8
+                    ]
+                },
+                "field_f2": {
+                    "type": "submessage",
+                    "is_repeated": false,
+                    "data": {
+                        "field_f1": {
+                            "type": "scalar",
+                            "is_repeated": false,
+                            "data": [
+                                8
+                            ]
+                        },
+                        "field_f2": {
+                            "type": "nonscalar",
+                            "is_repeated": false,
+                            "data": [
+                                17
+                            ]
+                        },
+                        "field_f3": {
+                            "type": "nonscalar",
+                            "is_repeated": false,
+                            "data": [
+                                11
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        "field_f11": {
+            "type": "scalar",
+            "is_repeated": false,
+            "data": [
+                8
+            ]
+        },
+        "field_f12": {
+            "type": "scalar",
+            "is_repeated": false,
+            "data": [
+                8
+            ]
+        },
+        "field_f13": {
+            "type": "nonscalar",
+            "is_repeated": false,
+            "data": [
+                145932
+            ]
+        },
+        "field_f14": {
+            "type": "submessage",
+            "is_repeated": false,
+            "data": {
+                "field_f1": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        19
+                    ]
+                }
+            }
+        },
+        "field_f15": {
+            "type": "nonscalar",
+            "is_repeated": false,
+            "data": [
+                19
+            ]
+        },
+        "field_f16": {
+            "type": "nonscalar",
+            "is_repeated": false,
+            "data": [
+                24
+            ]
+        }
+    },
+    {
+        "field_f1": {
+            "type": "nonscalar",
+            "is_repeated": false,
+            "data": [
+                4904
+            ]
+        },
+        "field_f2": {
+            "type": "scalar",
+            "is_repeated": false,
+            "data": [
+                8
+            ]
+        },
+        "field_f3": {
+            "type": "nonscalar",
+            "is_repeated": false,
+            "data": [
+                18
+            ]
+        },
+        "field_f4": {
+            "type": "nonscalar",
+            "is_repeated": false,
+            "data": [
+                131644
+            ]
+        },
+        "field_f5": {
+            "type": "submessage",
+            "is_repeated": false,
+            "data": {
+                "field_f1": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        3
+                    ]
+                }
+            }
+        },
+        "field_f6": {
+            "type": "submessage",
+            "is_repeated": false,
+            "data": {
+                "field_f1": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        304
+                    ]
+                },
+                "field_f2": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        3
+                    ]
+                },
+                "field_f3": {
+                    "type": "submessage",
+                    "is_repeated": false,
+                    "data": {
+                        "field_f1": {
+                            "type": "nonscalar",
+                            "is_repeated": false,
+                            "data": [
+                                620
+                            ]
+                        }
+                    }
+                },
+                "field_f4": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        17
+                    ]
+                },
+                "field_f5": {
+                    "type": "nonscalar",
+                    "is_repeated": true,
+                    "data": [
+                        1508
+                    ]
+                },
+                "field_f6": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        19
+                    ]
+                }
+            }
+        },
+        "field_f7": {
+            "type": "nonscalar",
+            "is_repeated": false,
+            "data": [
+                17656
+            ]
+        },
+        "field_f8": {
+            "type": "nonscalar",
+            "is_repeated": false,
+            "data": [
+                3
+            ]
+        }
+    },
+    {
+        "field_f1": {
+            "type": "nonscalar",
+            "is_repeated": false,
+            "data": [
+                17
+            ]
+        },
+        "field_f2": {
+            "type": "nonscalar",
+            "is_repeated": false,
+            "data": [
+                2476
+            ]
+        },
+        "field_f3": {
+            "type": "nonscalar",
+            "is_repeated": false,
+            "data": [
+                19
+            ]
+        },
+        "field_f4": {
+            "type": "scalar",
+            "is_repeated": false,
+            "data": [
+                8
+            ]
+        },
+        "field_f5": {
+            "type": "nonscalar",
+            "is_repeated": false,
+            "data": [
+                17
+            ]
+        },
+        "field_f6": {
+            "type": "nonscalar",
+            "is_repeated": false,
+            "data": [
+                19
+            ]
+        },
+        "field_f7": {
+            "type": "nonscalar",
+            "is_repeated": false,
+            "data": [
+                4
+            ]
+        },
+        "field_f8": {
+            "type": "submessage",
+            "is_repeated": false,
+            "data": {
+                "field_f1": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        20
+                    ]
+                }
+            }
+        },
+        "field_f9": {
+            "type": "submessage",
+            "is_repeated": false,
+            "data": {
+                "field_f1": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        19
+                    ]
+                },
+                "field_f2": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        5
+                    ]
+                },
+                "field_f3": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        3
+                    ]
+                },
+                "field_f4": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        19
+                    ]
+                },
+                "field_f5": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        17
+                    ]
+                },
+                "field_f6": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        392
+                    ]
+                }
+            }
+        },
+        "field_f10": {
+            "type": "nonscalar",
+            "is_repeated": false,
+            "data": [
+                57128
+            ]
+        },
+        "field_f11": {
+            "type": "nonscalar",
+            "is_repeated": false,
+            "data": [
+                7
+            ]
+        },
+        "field_f12": {
+            "type": "submessage",
+            "is_repeated": false,
+            "data": {
+                "field_f1": {
+                    "type": "nonscalar",
+                    "is_repeated": false,
+                    "data": [
+                        3
+                    ]
+                }
+            }
+        },
+        "field_f13": {
+            "type": "submessage",
+            "is_repeated": false,
+            "data": {
+                "field_f1": {
+                    "type": "submessage",
+                    "is_repeated": false,
+                    "data": {
+                        "field_f1": {
+                            "type": "nonscalar",
+                            "is_repeated": false,
+                            "data": [
+                                4
+                            ]
+                        },
+                        "field_f2": {
+                            "type": "scalar",
+                            "is_repeated": false,
+                            "data": [
+                                8
+                            ]
+                        },
+                        "field_f3": {
+                            "type": "nonscalar",
+                            "is_repeated": false,
+                            "data": [
+                                17
+                            ]
+                        },
+                        "field_f4": {
+                            "type": "nonscalar",
+                            "is_repeated": false,
+                            "data": [
+                                19
+                            ]
+                        },
+                        "field_f5": {
+                            "type": "nonscalar",
+                            "is_repeated": false,
+                            "data": [
+                                5
+                            ]
+                        }
+                    }
+                },
+                "field_f2": {
+                    "type": "scalar",
+                    "is_repeated": false,
+                    "data": [
+                        8
+                    ]
+                }
+            }
+        }
+    }
+]

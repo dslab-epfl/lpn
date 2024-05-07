@@ -16,11 +16,11 @@ copy_files_for_symbex:
 # Target for running the example
 run_example: copy_files
 	@echo "Run example instructions"
-	@python3 run_sim.py  -ref test_data/ref.0.hex -query test_data/query.0.hex
+	@python3 run_sim.py  -ref test_data/ref.1.hex -query test_data/query.1.hex
 
 run_translate: copy_files
 	@echo "Run translation"
-	@python3 run_translate.py -ref test_data/ref.0.hex -query test_data/query.0.hex
+	@python3 run_translate.py -ref test_data/ref.1.hex -query test_data/query.1.hex
 	@make -C LPNCPP/ -f Makefile
 
 run_cpp: run_translate

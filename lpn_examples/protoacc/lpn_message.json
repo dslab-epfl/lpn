@@ -1,0 +1,48 @@
+{
+    "field_1": {
+        "type": "submessage",
+        "is_repeated": false,
+        "data": {
+            "field_1": {
+                "type": "submessage",
+                "is_repeated": false,
+                "data": {
+                    "field_1": {
+                        "type": "nonscalar",
+                        "is_repeated": true,
+                        "data": [
+                            16,
+                            47
+                        ]
+                    },
+                    "field_2": {
+                        "type": "submessage",
+                        "is_repeated": false,
+                        "data": {
+                            "field_1": {
+                                "type": "nonscalar",
+                                "is_repeated": false,
+                                "data": [
+                                    352
+                                ]
+                            },
+                            "field_2": {
+                                "type": "submessage",
+                                "is_repeated": false,
+                                "data": {
+                                    "field_1": {
+                                        "type": "nonscalar",
+                                        "is_repeated": false,
+                                        "data": [
+                                            176
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

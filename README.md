@@ -142,6 +142,7 @@ However, experiments that obtain performance metric s using LPNs are generally m
         - [protoacc](lpn_examples/protoacc/)
         - [darwin](lpn_examples/darwin/)
         - [menshen](lpn_examples/menshen/).
+    - VTA experiments are not provided, as the interface for instruction sequences gets very large and is not readable at all. If you still want to try extracting, we recommend specify concrete input (not symbolic input space), the same procedure is applied for performance interface extraction but the with no burden of handling large number of symbols that can not be summarized. 
             
 - **Accuracy of generated performance interfaces:**
     - **Instructions (inside the docker):**

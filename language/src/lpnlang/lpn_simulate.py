@@ -190,3 +190,21 @@ def lpn_sim(t_list, node_dict, debug=False, wait=100000000000, halt_cond_transit
                 node_dict[halt_cond_transition_id].disabled = True
             
     return prev_time
+
+
+def lpn_sim_one_step(t_list):
+
+    for t in t_list:
+        t_trigger(t) 
+
+    time, min_trans = min_fire_time(t_list)
+    enabled_ts = all_enabled_trans(t_list, time)
+        # for t in enabled_ts:
+        #     print("enabled@", time, t.id)
+    if time == np.Inf:
+        return -1, None
+    
+    for t in t_list:
+        t_sync(t, time, debug=0)
+
+    return time, enabled_ts

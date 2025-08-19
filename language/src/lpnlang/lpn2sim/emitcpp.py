@@ -469,8 +469,11 @@ class CppFunctionGenerator(ast.NodeVisitor):
                     assert(0)
                 fields.append(f"{key_str}")
                 set_value.append((key_str, value))
-            assert(tuple(fields) in self.set_of_token_types)
-            token_type_name = self.set_of_token_types[tuple(fields)]
+
+            sorted_tuple = tuple(sorted(fields))
+            assert sorted_tuple in self.set_of_token_types
+            token_type_name = self.set_of_token_types[sorted_tuple]
+
             self.token_types[token_type_name] = fields
 
             return token_type_name, set_value
@@ -502,7 +505,7 @@ def generate_token_classes_and_p_list_from_p_list(p_list, PATH_NAME):
     set_of_token_types = {}
     all_place = []
     for place in p_list:
-        fields = place.type_annotations
+        fields = sorted(place.type_annotations)
         # Filter out empty strings (empty fields)
         if tuple(fields) in set_of_token_types:
             all_place.append((place.id, set_of_token_types[tuple(fields)]))
@@ -586,7 +589,7 @@ def generate_lpn_setup(p_list, set_of_token_types, PATH_NAME):
                 tk = place.tokens_init[0]
                 init_token_code = ""
                 tk_name = f"{place.id}_tk"
-                token_type_str = set_of_token_types[tuple(place.type_annotations)]
+                token_type_str = set_of_token_types[tuple(sorted(place.type_annotations))]
                 init_token_code += """{indent2}NEW_TOKEN({token_type_str}, {token_name});\n""".format(indent2=INDENT*2, token_type_str=token_type_str, token_name=tk_name)
                 for key in place.type_annotations:
                     init_token_code += """{indent2}{tk_name}->{key} = {value};\n""".format(indent2=INDENT*2, tk_name=tk_name, key=key, value=tk.prop(key))
@@ -604,7 +607,7 @@ def generate_lpn_setup(p_list, set_of_token_types, PATH_NAME):
             setup_place_code += """\n{indent}for (int i = 0; i < {tk_len}; ++i){{\n""".format(tk_len=1, indent=INDENT)
             for ith, tk in enumerate(place.tokens_init):
                 tk_name = f"{place.id}_{ith}_tk"
-                token_type_str = set_of_token_types[tuple(place.type_annotations)]
+                token_type_str = set_of_token_types[tuple(sorted(place.type_annotations))]
                 setup_place_code += """{indent}NEW_TOKEN({token_type_str}, {token_name});\n""".format(indent=INDENT, token_type_str=token_type_str, token_name=tk_name)
                 for key in place.type_annotations:
                     setup_place_code += """{indent}{tk_name}->{key} = {value};\n""".format(indent=INDENT, tk_name=tk_name, key=key, value=tk.prop(key))

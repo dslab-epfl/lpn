@@ -1,6 +1,9 @@
 # Ignore __pycache__ directories
 __pycache__/
 
+# Ignore LPNCPP directories
+LPNCPP/
+
 dist/
 
 *.swp

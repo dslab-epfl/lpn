@@ -1,0 +1,7 @@
+memory_req_store: ['req_id', 'pid_fd', 'addr', 'len', 'mem_buffer_ptr', 'type', 'ref_ptr']
+memory_req_front: ['req_id', 'pid_fd', 'addr', 'len', 'mem_buffer_ptr', 'type', 'ref_ptr']
+memory_resp_cl: ['addr', 'type']
+memory_req_cl: ['addr', 'type']
+memory_resp: ['req_id', 'pid_fd', 'addr', 'len', 'mem_buffer_ptr', 'type', 'ref_ptr']
+inflight_cl_cnt: ['num']
+memory_inflight_cap: []

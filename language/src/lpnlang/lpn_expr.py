@@ -6,6 +6,7 @@ class EdgeExpr:
         self.func = None
         self.extern_func = []
         self.name = name
+        self.aggregate = False
     
     def install(self, func):
         self.func = func
@@ -15,7 +16,7 @@ class EdgeExpr:
 
     def __call__(self, *args):
         if len(args) != len(self.param_types.keys()):
-            raise TypeError(f"Expected {len(self.param_types.keys())} parameters, got {len(args)}")
+            raise TypeError(f"{self.name} Expected {len(self.param_types.keys())} parameters, got {len(args)}")
         for i, (key, expected_type) in enumerate(self.param_types.items()):
             expected_type = self.param_types.get(key)
             value = args[i]
@@ -37,11 +38,11 @@ class EdgeExpr:
                     first_arg, second_arg = typing.get_args(expected_type)
                     for k, v in value.items():
                         if not isinstance(k, first_arg):
-                            raise TypeError(f"(dict)Parameter '{key}' must be of type Dict[{first_arg.__name__}, {second_arg.__name__}]")
+                            raise TypeError(f"{self.name}  (dict)Parameter '{key}' must be of type Dict[{first_arg.__name__}, {second_arg.__name__}]")
                         if not isinstance(v, second_arg):
-                            raise TypeError(f"(dict)Parameter '{key}' must be of type Dict[{first_arg.__name__}, {second_arg.__name__}]")
+                            raise TypeError(f"{self.name}  (dict)Parameter '{key}' must be of type Dict[{first_arg.__name__}, {second_arg.__name__}]")
                 else:
-                    raise TypeError(f"(dict)Parameter '{key}' must be of type {expected_type.__name__}")
+                    raise TypeError(f"{self.name} (dict)Parameter '{key}' must be of type {expected_type.__name__}")
             else:
                 if not isinstance(value, expected_type):
                     raise TypeError(f"(plain)Parameter '{key}' must be of type {expected_type.__name__}")
@@ -75,6 +76,19 @@ class OutWeightFunc(EdgeExpr):
 
         def __call__(self, binding, output_place):
             return self.edge_expr.func(binding, output_place, *self.args)
+
+class OutWeightFuncA(EdgeExpr):
+    def __init__(self, name, **kwargs):
+        super().__init__(name, **kwargs)
+        self.aggregate = True
+    
+    class CallableEdgeExpr:
+        def __init__(self, edge_expr, args):
+            self.edge_expr = edge_expr
+            self.args = args
+
+        def __call__(self, binding, output_places):
+            return self.edge_expr.func(binding, output_places, *self.args)
 
 class GuardFunc(EdgeExpr):
     def __init__(self, name, **kwargs):

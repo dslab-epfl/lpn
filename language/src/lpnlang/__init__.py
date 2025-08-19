@@ -1,5 +1,5 @@
 from .lpn_place import Place
-from .lpn_expr import InWeightFunc, DelayFunc, OutWeightFunc, GuardFunc, ThresholdFunc
+from .lpn_expr import InWeightFunc, DelayFunc, OutWeightFunc, GuardFunc, ThresholdFunc, OutWeightFuncA
 from .lpn_expr import IntFunc, VoidFunc
 from .lpn_token import Token
 from .lpn_transition import Transition

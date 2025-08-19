@@ -5,9 +5,9 @@ from lpnlang import Place, Transition, Token
 from lpnlang import lpn_sim
 from lpnlang import lpn_all_nodes
 from lpnlang.lpn2sim import pylpn2cpp
-from lpn_def.sim import lpndef_with_cpu as PcieWCPU
-from lpn_def.all_enum import CstStr
-from param_x8 import *
+from pcie_topo.lpn_def.sim import lpndef_with_cpu as PcieWCPU
+from pcie_topo.lpn_def.all_enum import CstStr
+from pcie_topo.param_x8 import *
 
 def generate_random_data(node_dict, args):
     device1_buf = node_dict["d1_reqbuf_nonpost"]

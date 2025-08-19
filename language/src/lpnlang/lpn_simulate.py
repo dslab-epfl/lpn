@@ -57,7 +57,7 @@ def t_extend_binding(p, num_of_tokens, binding):
 
 def t_able_to_fire(self):
     able_to_fire = True
-    time_list = []
+    time_list = [self.time]
     if self.pip_place != None:
         if not p_check_token_requirement(self.pip_place, 1):
             return False, 0
@@ -68,7 +68,7 @@ def t_able_to_fire(self):
         self.binding[f"{p.id}.tk_len"] = len(p.tokens)
     
     for i, p in enumerate(self.p_input):
-        if self.pi_w_threshold != None and len(self.pi_w_threshold) != 0 and self.pi_w_threshold[i](self.binding) > 0:
+        if self.pi_w_threshold != None and len(self.pi_w_threshold) != 0 and self.pi_w_threshold[i] != None and self.pi_w_threshold[i](self.binding) > 0:
             consume_num_tokens = self.pi_w_threshold[i](self.binding)
         else:
             consume_num_tokens = self.pi_w[i](self.binding)
@@ -92,6 +92,9 @@ def t_fire(self):
         p_fire(self.pip_place, 1)
     for p in self.p_input:
         i = self.p_input.index(p)
+        if self.pi_w[i] == None:
+            # contume_num_tokens == 0
+            continue
         consume_num_tokens = self.pi_w[i](self.binding)
         if consume_num_tokens == 0 or consume_num_tokens == -2:
             continue
@@ -103,12 +106,24 @@ def t_accept(self, enabled_time, fire_time):
         self.pip_place.push_token(Token(None, fire_time))
     else:
         self.pip_place.push_token(Token(None, enabled_time+self.pip(self.binding)))
-    for p in self.p_output:
-        i = self.p_output.index(p)
-        old_len = self.p_output[i].token_len()
-        self.po_w[i](self.binding, p)
-        for ith_tk in range(old_len, p.token_len()):
-            p.tokens[ith_tk].ts = fire_time 
+
+    if len(self.po_w) == 1 and self.po_w[0].edge_expr.aggregate == True:
+        token_len_list = []
+        for p in self.p_output:
+            i = self.p_output.index(p)
+            old_len = self.p_output[i].token_len()
+            token_len_list.append(old_len)
+        self.po_w[0](self.binding, self.p_output)
+        for p, old_len in zip(self.p_output, token_len_list):
+            for ith_tk in range(old_len, p.token_len()):
+                p.tokens[ith_tk].ts = fire_time
+    else:
+        for p in self.p_output:
+            i = self.p_output.index(p)
+            old_len = self.p_output[i].token_len()
+            self.po_w[i](self.binding, p)
+            for ith_tk in range(old_len, p.token_len()):
+                p.tokens[ith_tk].ts = fire_time 
     self.last_ft = fire_time
 
 
@@ -120,10 +135,13 @@ def t_trigger(self):
         return 0
     if len(self.delay_event) != 0:
         return 0
+
     can_fire, enabled_time = t_able_to_fire(self)
     enabled_time = max(enabled_time, self.time)
     if len(self.delay_event)==0 and can_fire:
         delay_time = t_delay(self)
+        if delay_time == np.Inf:
+            return 0
         mature_time = max(self.last_ft, enabled_time+delay_time)
         self.delay_event.append([mature_time, enabled_time])
         self.count += 1
